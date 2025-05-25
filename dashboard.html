@@ -1,0 +1,106 @@
+<!-- Appointment Modal -->
+<div id="appointmentModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('appointmentModal')">&times;</span>
+        <div class="modal-header">
+            <h2><i class="fas fa-calendar-alt"></i> Schedule Appointment</h2>
+        </div>
+        <form id="appointmentForm" class="form">
+            <div class="form-group">
+                <label for="appointmentDate">Date</label>
+                <input type="date" id="appointmentDate" required>
+            </div>
+            <div class="form-group">
+                <label for="appointmentTime">Time</label>
+                <input type="time" id="appointmentTime" required>
+            </div>
+            <div class="form-group">
+                <label for="appointmentType">Type</label>
+                <select id="appointmentType" required>
+                    <option value="">Select Type</option>
+                    <option value="general-checkup">General Checkup</option>
+                    <option value="consultation">Consultation</option>
+                    <option value="follow-up">Follow-up</option>
+                    <option value="emergency">Emergency</option>
+                    <option value="specialist">Specialist Visit</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="appointmentDoctor">Doctor/Healthcare Provider</label>
+                <input type="text" id="appointmentDoctor" required>
+            </div>
+            <div class="form-group">
+                <label for="appointmentLocation">Location</label>
+                <input type="text" id="appointmentLocation" placeholder="e.g., Campus Health Center">
+            </div>
+            <div class="form-group">
+                <label for="appointmentNotes">Notes</label>
+                <textarea id="appointmentNotes" rows="3" placeholder="Additional notes or symptoms"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Schedule Appointment</button>
+        </form>
+    </div>
+</div>
+
+<!-- Medication Modal -->
+<div id="medicationModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('medicationModal')">&times;</span>
+        <div class="modal-header">
+            <h2><i class="fas fa-pills"></i> Add Medication</h2>
+        </div>
+        <form id="medicationForm" class="form">
+            <div class="form-group">
+                <label for="medicationName">Medication Name</label>
+                <input type="text" id="medicationName" required placeholder="e.g., Ibuprofen">
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="medicationDosage">Dosage</label>
+                    <input type="text" id="medicationDosage" required placeholder="e.g., 200mg">
+                </div>
+                <div class="form-group">
+                    <label for="medicationFrequency">Frequency</label>
+                    <select id="medicationFrequency" required>
+                        <option value="">Select Frequency</option>
+                        <option value="once-daily">Once Daily</option>
+                        <option value="twice-daily">Twice Daily</option>
+                        <option value="three-times-daily">Three Times Daily</option>
+                        <option value="four-times-daily">Four Times Daily</option>
+                        <option value="as-needed">As Needed</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="medicationPrescribedBy">Prescribed By</label>
+                <input type="text" id="medicationPrescribedBy" required placeholder="Doctor's name">
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="medicationStartDate">Start Date</label>
+                    <input type="date" id="medicationStartDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="medicationEndDate">End Date (Optional)</label>
+                    <input type="date" id="medicationEndDate">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="medicationStatus">Status</label>
+                <select id="medicationStatus" required>
+                    <option value="active">Active</option>
+                    <option value="completed">Completed</option>
+                    <option value="discontinued">Discontinued</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="medicationNotes">Notes</label>
+                <textarea id="medicationNotes" rows="3" placeholder="Side effects, instructions, etc."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Add Medication</button>
+        </form>
+    </div>
+</div>
