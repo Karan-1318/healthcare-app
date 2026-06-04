@@ -70,6 +70,4 @@ For testing purposes:
 - **Production**: [Your Vercel URL will be here]
 - **Development**: http://localhost:3000
 
-## Support
 
-For issues or questions, contact: [your-email@domain.com]
