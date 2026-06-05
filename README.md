@@ -1,9 +1,9 @@
-Student Healthcare Tracker
+### Student Healthcare Tracker
 A local-first, client-side web application built with Next.js 14 to help students track clinic visits, medical logs, and prescription schedules.
 
 Because the app is designed with absolute data privacy in mind, it requires zero backend database setup. All data is managed locally right in the user's browser.
 
-🛠️ Tech Stack
+### Tech Stack
 Framework: Next.js 14 (App Router)
 
 Language: TypeScript
@@ -14,7 +14,7 @@ Storage: Web Storage API (Local Storage)
 
 Deployment: Vercel
 
-✨ Key Features
+### Key Features
 Complete Privacy: Zero-knowledge architecture. No health records or personal data are ever uploaded to an external server.
 
 Dashboard Overview: Quick-glance widgets displaying upcoming clinic appointments, active medication dosages, and health logs.
@@ -23,11 +23,11 @@ Data Portability (Import/Export): Easily bypass the lack of a cloud database by 
 
 Demo Mode: Built-in mock credentials to let users test the dashboard experience instantly without needing an enrollment setup.
 
-🚀 Getting Started
+### Getting Started
 Prerequisites
 Make sure you have Node.js installed on your machine.
 
-Local Installation
+### Local Installation
 1. Clone the repository and navigate into the project folder:
 git clone https://github.com/Karan-1318/healthcare-app.git
 cd healthcare-app
@@ -48,7 +48,7 @@ To skip manual data entry and instantly preview the populated layout, log in usi
 * **Email:** `demo@student.edu`
 * **Password:** `demo123`
 
-## 🔄 How Data Sync Works
+### 🔄 How Data Sync Works
 
 Since there is no backend server, syncing between your laptop and mobile phone is completely manual and file-based:
 
