@@ -1,73 +1,54 @@
-# Healthcare Management System
+Student Healthcare Tracker
+A local-first, client-side web application built with Next.js 14 to help students track clinic visits, medical logs, and prescription schedules.
 
-A comprehensive student healthcare management system built with Next.js and React.
+Because the app is designed with absolute data privacy in mind, it requires zero backend database setup. All data is managed locally right in the user's browser.
 
-## Features
+Tech Stack
+Framework: Next.js 14 (App Router)
 
-- 🏥 **Medical Records Management**: Track medical history, appointments, and medications
-- 👤 **User Authentication**: Secure registration and login system
-- 📱 **Multi-Device Support**: Export/import data across devices
-- 🔒 **Privacy First**: All data stored locally in browser
-- 📊 **Dashboard Overview**: Quick stats and recent activity
-- 💊 **Medication Tracking**: Monitor prescriptions and dosages
-- 📅 **Appointment Scheduling**: Manage healthcare appointments
+Language: TypeScript
 
-## Quick Start
+Styling: Tailwind CSS & shadcn/ui
 
-### Option 1: Deploy to Vercel (Recommended)
+Storage: Web Storage API (Local Storage)
 
-1. Download this project from v0
-2. Go to [vercel.com](https://vercel.com)
-3. Click "Add New Project" → "Browse" → Upload ZIP
-4. Deploy automatically
-5. Get your permanent link!
+Deployment: Vercel
 
-### Option 2: Run Locally
+Key Features
+Complete Privacy: Zero-knowledge architecture. No health records or personal data are ever uploaded to an external server.
 
-\`\`\`bash
-npm install
+Dashboard Overview: Quick-glance widgets displaying upcoming clinic appointments, active medication dosages, and health logs.
+
+Data Portability (Import/Export): Easily bypass the lack of a cloud database by exporting your entire profile into a structured JSON file, allowing you to back up your data or paste it into another device to sync up.
+
+Demo Mode: Built-in mock credentials to let users test the dashboard experience instantly without needing an enrollment setup.
+
+Getting Started
+Prerequisites
+Make sure you have Node.js installed on your machine.
+
+Local Installation
+1. Clone this repository to your local machine:
+git clone https://github.com/Karan-1318/healthcare-app.git
+cd healthcare-app
+
+2. Install the project dependencies:
+   ```bash
+   npm install
+
+3. Fire up the local development server:
 npm run dev
-\`\`\`
-
-Open [http://localhost:3000](http://localhost:3000)
-
-## Multi-Device Usage
-
-1. **Export Data**: Settings tab → Export Data → Download JSON
-2. **Import Data**: Settings tab → Import Data → Paste JSON
-3. **Share Links**: Generate shareable URLs for instant data transfer
-
-## Demo Credentials
-
-For testing purposes:
-- Email: demo@student.edu
-- Password: demo123
-
-## Project Structure
-
-\`\`\`
-├── app/
-│   ├── page.tsx          # Main application
-│   ├── layout.tsx        # Root layout
-│   └── globals.css       # Global styles
-├── components/
-│   ├── ui/              # shadcn/ui components
-│   └── data-manager.tsx # Export/Import functionality
-└── lib/
-    └── utils.ts         # Utility functions
-\`\`\`
-
-## Technologies Used
-
-- **Next.js 14** - React framework
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Styling
-- **shadcn/ui** - UI components
-- **Local Storage** - Data persistence
-
-## Deployment URLs
-
-- **Production**: [Your Vercel URL will be here]
-- **Development**: http://localhost:3000
 
 
+4. Open your browser and navigate to `http://localhost:3000`.
+
+### Live Demo Access
+To skip manual entry and instantly preview the populated layout, log in using the following test credentials:
+* **Email:** `demo@student.edu`
+* **Password:** `demo123`
+
+## 🔄 How Data Sync Works
+
+Since there is no backend server, syncing between your laptop and mobile phone is completely manual and file-based:
+1. **To Backup:** Go to the Settings tab, click **Export Data**, and save the generated JSON file.
+2. **To Restore:** Open the app on your other device, go to Settings, click **Import Data**, and paste the JSON payload to load your dashboard state.
