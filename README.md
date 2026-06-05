@@ -33,7 +33,6 @@ git clone https://github.com/Karan-1318/healthcare-app.git
 cd healthcare-app
 
 2. **Install the project dependencies:**
-   ```bash
 npm install
 
 3. Fire up the local development server:
